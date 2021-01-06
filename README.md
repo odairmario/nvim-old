@@ -1,5 +1,10 @@
 # Nvim Configurations
-## Plugin manger
+## Requirements
+### Packages
+```bash
+pip install -r requirements.txt
+```
+### Plugin manger
 First steps is configure de pluginr manager, we use the [vim plug](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links).
 In linux can execute this line to install plugin manager:
 ```bash
@@ -8,12 +13,32 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ```
 
 ## My plugins
-| Name     | Description        | Url                                                           |
-|----------|--------------------|---------------------------------------------------------------|
-| NerdTree | Tree file explorer | [scrooloose/nerdTree](https://github.com/preservim/nerdtree) |
-|
+| Name            | Description                               | Url                                                                                 |
+|-----------------|-------------------------------------------|-------------------------------------------------------------------------------------|
+| NerdTree        | Tree file explorer                        | [scrooloose/nerdTree](https://github.com/preservim/nerdtree)                        |
+| CtrlP           | open buffers, files on vim with `<C-p>`   | [ctrlpvim/ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim )                        |
+| Vim airline     | Airline bar                               | [bling/vim-airline](https://github.com/vim-airline/vim-airline)                     |
+| Airline themes  | Themes for vim airline bar                | [vim-airline/vim-airline-themes](https://github.com/vim-airline/vim-airline-themes) |
+| Deoplete        | Autocomplete Enginer                      | [Shougo/deoplete.nvim](https://github.com/Shougo/deoplete.nvim)                     |
+| Deoplete-clangx | Asynchronous C/C++ completion for Neovim. | [Shougo/deoplete-clangx](https://github.com/Shougo/deoplete-clangx)
+
+
 
 ## My configs
-| Command                         | Description   | Note             |
-|---------------------------------|---------------|------------------|
-| `nmap <F4> NERDTreeToggle <CR>`{:.vim} | Open Nerdtree | Plugin: NERDTREE |
+### General settings 
+| Command              | Description                       |
+|----------------------|-----------------------------------|
+| `syntax on`          | Enable syntax highlight           |
+| `set encoding=utf-8` | set encoding to utf-8             |
+| `set shhowmatch`     | briefly jump to matching brackets |
+| `set textwidth=80`   | text width                        |
+| `set mouse=a`        | Enable mouse functions            |
+| `set number`         | Show numbers                      |
+|----------------------|-----------------------------------|
+
+
+### Plugins settings
+| Command                                | Description                | Plugin   |
+|----------------------------------------|----------------------------|----------|
+| `nmap <F4> NERDTreeToggle <CR>`        | Open Nerdtree              | NERDTREE  |
+| `let g:deoplete#enable_at_startup = 1` | Enable deoplete on startup | Deoplete |
