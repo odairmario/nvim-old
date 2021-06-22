@@ -4,8 +4,6 @@ import os
 import re
 import yaml
 
-
-
 class Nvim(object):
 
     """Class to represent nvim config"""
@@ -95,6 +93,7 @@ class Nvim(object):
 
         self.load_settings()
         self.load_plugins()
+        self.load_plugin_settings()
         self.load_other_settings()
         with open(self._output,"w") as f:
             f.writelines(self._vimrc_lines)

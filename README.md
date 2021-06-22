@@ -21,6 +21,11 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | Airline themes  | Themes for vim airline bar                | [vim-airline/vim-airline-themes](https://github.com/vim-airline/vim-airline-themes) |
 | Deoplete        | Autocomplete Enginer                      | [Shougo/deoplete.nvim](https://github.com/Shougo/deoplete.nvim)                     |
 | Deoplete-clangx | Asynchronous C/C++ completion for Neovim. | [Shougo/deoplete-clangx](https://github.com/Shougo/deoplete-clangx)                 |
+| deoplete-jedi   | python jedi completion                    | [deoplete-plugins/deoplete-jedi](https://github.com/deoplete-plugins/deoplete-jedi) |
+| vim-table-mode  | vim table mode                            | [dhruvasagar/vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)         |
+| tagbar          | tagbar                                    | [majutsushi/tagbar](https://github.com/majutsushi/tagbar)                           |
+| vim-snippets    | snniptes variados                         | [honza/vim-snippets](https://github.com/honza/vim-snippets                          |
+| ultisnips       | snniptes variados                         | [sirver/ultisnips](https://github.com/sirver/ultisnips)                             |
 
 ## My configs
 ### General settings 
@@ -43,14 +48,13 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | `set hls`                                        | enable highlights on search patterns |
 | `set ai`                                         | enable auto ident                    |
 | `set aw`                                         | enable auto saving on switch buffer  |
-| `set columns=100`                                | window with 100 columns              |
 | `set viminfo=%,'50,\"100,/100,:100,n`            | storage buffer options               |
 | `nmap <C-Down> ddp`                              | move line to down                    |
 | `nmap <C-Up> ddkP`                               | move line to up                      |
 | `nmap cc diwi`                                   | cut word and enter to insertmode     |
 | `nmap <F1> :make! <CR>`                          | make shotcut                         |
 | `nmap <F2> :noh <CR>`                            | disable highlight                    |
-| `nmap <F4> :NERDTreeToggle <CR>`                  | toggle NERDTree                      |
+| `nmap <F4> :NERDTreeToggle <CR>`                 | toggle NERDTree                      |
 | `nmap <F3> :TagbarOpenAutoClose <CR>`            | toggle TagBar                        |
 | `set showbreak=+++	" Wrap-broken line prefix`   | wrap-broken line prefix              |
 | `set cindent "indent estilo c`                   | indent style c                       |
@@ -62,4 +66,8 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | `let g:deoplete#enable_at_startup = 1`                | Enable deoplete on startup        | Deoplete     |
 | `autocmd FileType md  :silent :TableModeEnable`       | enable TableMode to markdown file | vim-markdown |
 | `autocmd FileType markdown  :silent :TableModeEnable` | enable TableMode to markdown file | vim-markdown |
+| `let g:tagbar_left=1`                                 | Tagbar left side                  | TagBar       |
+| `let g:UltiSnipsExpandTrigger="<c-j>"`                | enable snippets                   | utils-snips  |
+| `let g:UltiSnipsJumpForwardTrigger="<c-b>"`           |                                   | utils-snips  |
+| `let g:UltiSnipsJumpBackwardTrigger="<c-z>"`          |                                   | utils-snips  |
 
