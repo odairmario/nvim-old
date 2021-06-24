@@ -26,15 +26,16 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | tagbar          | tagbar                                    | [majutsushi/tagbar](https://github.com/majutsushi/tagbar)                           |
 | vim-snippets    | snniptes variados                         | [honza/vim-snippets](https://github.com/honza/vim-snippets                          |
 | ultisnips       | snniptes variados                         | [sirver/ultisnips](https://github.com/sirver/ultisnips)                             |
+| NeoSolarized    | solarized coloscheme                      | [overcache/NeoSolarized](https://github.com/overcache/NeoSolarized)                 |
+| Ale             | syntax checker                            | [dense-analysis/ale](https://github.com/dense-analysis/ale)                         |
 
 ## My configs
-### General settings 
+### General settings
 | Command                                          | Description                          |
 |--------------------------------------------------|--------------------------------------|
 | `syntax on`                                      | Enable syntax highlight              |
 | `set encoding=utf-8`                             | set encoding to utf-8                |
 | `set showmatch`                                  | briefly jump to matching brackets    |
-| `set textwidth=90`                               | text width                           |
 | `set number`                                     | Show numbers                         |
 | `set showcmd`                                    | show inserted command                |
 | `set expandtab`                                  | tab 4 espaco                         |
@@ -58,6 +59,8 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | `nmap <F3> :TagbarOpenAutoClose <CR>`            | toggle TagBar                        |
 | `set showbreak=+++	" Wrap-broken line prefix`   | wrap-broken line prefix              |
 | `set cindent "indent estilo c`                   | indent style c                       |
+| `set nowrap`                                     | dont break lines                     |
+
 
 ### Plugins settings
 | Command                                               | Description                       | Plugin       |
@@ -70,4 +73,9 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | `let g:UltiSnipsExpandTrigger="<c-j>"`                | enable snippets                   | utils-snips  |
 | `let g:UltiSnipsJumpForwardTrigger="<c-b>"`           |                                   | utils-snips  |
 | `let g:UltiSnipsJumpBackwardTrigger="<c-z>"`          |                                   | utils-snips  |
-
+| `let g:ale_completion_enabled = 1`                    | enable ale completion             | ale          |
+| `let g:ale_completion_autoimport = 1`                 | ale completion autoimport         | ale          |
+| `let g:ale_fix_on_save = 1`                           | fix on save                       | ale          |
+| `let g:airline#extensions#ale#enabled = 1`            | intregate ale with airline bar    | ale          |
+| `colorscheme NeoSolarized`                            | neo solarized                     | neosolarized |
+# vazio
