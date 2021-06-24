@@ -1,0 +1,23 @@
+delimiter: "|"
+delimiter_end_line: "\n"
+document_file: "README.md"
+
+GeneralSettings:
+  header: "### general settings"
+  command_col: "Command"
+  description_col: "Description"
+
+Plugin:
+  header: "## My plugins"
+  name_col: "Name"
+  description_col: "Description"
+  url_col: "Url"),
+  start_plugin: "call plug#begin()"
+  end_plugin: "call plug#end()"
+
+PluginSettings:
+	header: "### Plugins settings"
+	command_col: "Command"
+	description_col: "Description"
+	plugin_col: "Plugin")
+
