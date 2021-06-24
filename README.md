@@ -1,6 +1,7 @@
 # Nvim Configurations
 ## Requirements
 ### Packages
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -28,6 +29,9 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | ultisnips       | snniptes variados                         | [sirver/ultisnips](https://github.com/sirver/ultisnips)                             |
 | NeoSolarized    | solarized coloscheme                      | [overcache/NeoSolarized](https://github.com/overcache/NeoSolarized)                 |
 | Ale             | syntax checker                            | [dense-analysis/ale](https://github.com/dense-analysis/ale)                         |
+| auto-pairs      | close pairs                               | [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs)                     |
+| GitGuTter       | git interface                             | [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)                 |
+| spell-pt-br     | spell check ptbr                          | [mateusbraga/vim-spell-pt-b](https://github.com/mateusbraga/vim-spell-pt-b)         |
 
 ## My configs
 ### General settings
@@ -60,6 +64,8 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | `set showbreak=+++	" Wrap-broken line prefix`   | wrap-broken line prefix              |
 | `set cindent "indent estilo c`                   | indent style c                       |
 | `set nowrap`                                     | dont break lines                     |
+| `set spelllang=pt_br,en`                         | spell check                          |
+| `set mouse=ci`                                   | funcoes mouse                        |
 
 
 ### Plugins settings
