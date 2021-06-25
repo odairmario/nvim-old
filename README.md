@@ -31,7 +31,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | Ale             | syntax checker                            | [dense-analysis/ale](https://github.com/dense-analysis/ale)                         |
 | auto-pairs      | close pairs                               | [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs)                     |
 | GitGuTter       | git interface                             | [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)                 |
-| spell-pt-br     | spell check ptbr                          | [mateusbraga/vim-spell-pt-b](https://github.com/mateusbraga/vim-spell-pt-b)         |
+| spell-pt-br     | spell check ptbr                          | [mateusbraga/vim-spell-pt-br](https://github.com/mateusbraga/vim-spell-pt-b)         |
 
 ## My configs
 ### General settings
