@@ -14,24 +14,25 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ```
 
 ## My plugins
-| Name            | Description                               | Url                                                                                 |
-|-----------------|-------------------------------------------|-------------------------------------------------------------------------------------|
-| NerdTree        | Tree file explorer                        | [scrooloose/nerdTree](https://github.com/preservim/nerdtree)                        |
-| CtrlP           | open buffers, files on vim with `<C-p>`   | [ctrlpvim/ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim )                        |
-| Vim airline     | Airline bar                               | [bling/vim-airline](https://github.com/vim-airline/vim-airline)                     |
-| Airline themes  | Themes for vim airline bar                | [vim-airline/vim-airline-themes](https://github.com/vim-airline/vim-airline-themes) |
-| Deoplete        | Autocomplete Enginer                      | [Shougo/deoplete.nvim](https://github.com/Shougo/deoplete.nvim)                     |
-| Deoplete-clangx | Asynchronous C/C++ completion for Neovim. | [Shougo/deoplete-clangx](https://github.com/Shougo/deoplete-clangx)                 |
-| deoplete-jedi   | python jedi completion                    | [deoplete-plugins/deoplete-jedi](https://github.com/deoplete-plugins/deoplete-jedi) |
-| vim-table-mode  | vim table mode                            | [dhruvasagar/vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)         |
-| tagbar          | tagbar                                    | [majutsushi/tagbar](https://github.com/majutsushi/tagbar)                           |
-| vim-snippets    | snniptes variados                         | [honza/vim-snippets](https://github.com/honza/vim-snippets                          |
-| ultisnips       | snniptes variados                         | [sirver/ultisnips](https://github.com/sirver/ultisnips)                             |
-| NeoSolarized    | solarized coloscheme                      | [overcache/NeoSolarized](https://github.com/overcache/NeoSolarized)                 |
-| Ale             | syntax checker                            | [dense-analysis/ale](https://github.com/dense-analysis/ale)                         |
-| auto-pairs      | close pairs                               | [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs)                     |
-| GitGuTter       | git interface                             | [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)                 |
-| spell-pt-br     | spell check ptbr                          | [mateusbraga/vim-spell-pt-br](https://github.com/mateusbraga/vim-spell-pt-b)         |
+| Name              | Description                               | Url                                                                                 |
+|-------------------|-------------------------------------------|-------------------------------------------------------------------------------------|
+| NerdTree          | Tree file explorer                        | [scrooloose/nerdTree](https://github.com/preservim/nerdtree)                        |
+| CtrlP             | open buffers, files on vim with `<C-p>`   | [ctrlpvim/ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim )                        |
+| Vim airline       | Airline bar                               | [bling/vim-airline](https://github.com/vim-airline/vim-airline)                     |
+| Airline themes    | Themes for vim airline bar                | [vim-airline/vim-airline-themes](https://github.com/vim-airline/vim-airline-themes) |
+| Deoplete          | Autocomplete Enginer                      | [Shougo/deoplete.nvim](https://github.com/Shougo/deoplete.nvim)                     |
+| Deoplete-clangx   | Asynchronous C/C++ completion for Neovim. | [Shougo/deoplete-clangx](https://github.com/Shougo/deoplete-clangx)                 |
+| deoplete-jedi     | python jedi completion                    | [deoplete-plugins/deoplete-jedi](https://github.com/deoplete-plugins/deoplete-jedi) |
+| vim-table-mode    | vim table mode                            | [dhruvasagar/vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)         |
+| tagbar            | tagbar                                    | [majutsushi/tagbar](https://github.com/majutsushi/tagbar)                           |
+| vim-snippets      | snniptes variados                         | [honza/vim-snippets](https://github.com/honza/vim-snippets                          |
+| ultisnips         | snniptes variados                         | [sirver/ultisnips](https://github.com/sirver/ultisnips)                             |
+| NeoSolarized      | solarized coloscheme                      | [overcache/NeoSolarized](https://github.com/overcache/NeoSolarized)                 |
+| Ale               | syntax checker                            | [dense-analysis/ale](https://github.com/dense-analysis/ale)                         |
+| auto-pairs        | close pairs                               | [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs)                     |
+| GitGuTter         | git interface                             | [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)                 |
+| spell-pt-br       | spell check ptbr                          | [mateusbraga/vim-spell-pt-br](https://github.com/mateusbraga/vim-spell-pt-b)        |
+| tmux-complete.vim | tmux autocomplete                         | [wellle/tmux-complete.vim](https://github.com/wellle/tmux-complete.vim)             |
 
 ## My configs
 ### General settings
@@ -69,19 +70,20 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 
 ### Plugins settings
-| Command                                               | Description                       | Plugin       |
-|-------------------------------------------------------|-----------------------------------|--------------|
-| `nmap <F4> NERDTreeToggle <CR>`                       | Open Nerdtree                     | NERDTREE     |
-| `let g:deoplete#enable_at_startup = 1`                | Enable deoplete on startup        | Deoplete     |
-| `autocmd FileType md  :silent :TableModeEnable`       | enable TableMode to markdown file | vim-markdown |
-| `autocmd FileType markdown  :silent :TableModeEnable` | enable TableMode to markdown file | vim-markdown |
-| `let g:tagbar_left=1`                                 | Tagbar left side                  | TagBar       |
-| `let g:UltiSnipsExpandTrigger="<c-j>"`                | enable snippets                   | utils-snips  |
-| `let g:UltiSnipsJumpForwardTrigger="<c-b>"`           |                                   | utils-snips  |
-| `let g:UltiSnipsJumpBackwardTrigger="<c-z>"`          |                                   | utils-snips  |
-| `let g:ale_completion_enabled = 1`                    | enable ale completion             | ale          |
-| `let g:ale_completion_autoimport = 1`                 | ale completion autoimport         | ale          |
-| `let g:ale_fix_on_save = 1`                           | fix on save                       | ale          |
-| `let g:airline#extensions#ale#enabled = 1`            | intregate ale with airline bar    | ale          |
-| `colorscheme NeoSolarized`                            | neo solarized                     | neosolarized |
-# vazio
+| Command                                               | Description                       | Plugin        |
+|-------------------------------------------------------|-----------------------------------|---------------|
+| `nmap <F4> NERDTreeToggle <CR>`                       | Open Nerdtree                     | NERDTREE      |
+| `let g:deoplete#enable_at_startup = 1`                | Enable deoplete on startup        | Deoplete      |
+| `autocmd FileType md  :silent :TableModeEnable`       | enable TableMode to markdown file | vim-markdown  |
+| `autocmd FileType markdown  :silent :TableModeEnable` | enable TableMode to markdown file | vim-markdown  |
+| `let g:tagbar_left=1`                                 | Tagbar left side                  | TagBar        |
+| `let g:UltiSnipsExpandTrigger="<c-j>"`                | enable snippets                   | utils-snips   |
+| `let g:UltiSnipsJumpForwardTrigger="<c-b>"`           |                                   | utils-snips   |
+| `let g:UltiSnipsJumpBackwardTrigger="<c-z>"`          |                                   | utils-snips   |
+| `let g:ale_completion_enabled = 1`                    | enable ale completion             | ale           |
+| `let g:ale_completion_autoimport = 1`                 | ale completion autoimport         | ale           |
+| `let g:ale_fix_on_save = 1`                           | fix on save                       | ale           |
+| `let g:airline#extensions#ale#enabled = 1`            | intregate ale with airline bar    | ale           |
+| `colorscheme NeoSolarized`                            | neo solarized                     | neosolarized  |
+| `let g:tmuxcomplete#trigger = ''`                     | deoplete dont need trigger        | tmux-complete |
+# void
