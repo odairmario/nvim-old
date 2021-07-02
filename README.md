@@ -62,11 +62,12 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | `nmap <F2> :noh <CR>`                            | disable highlight                    |
 | `nmap <F4> :NERDTreeToggle <CR>`                 | toggle NERDTree                      |
 | `nmap <F3> :TagbarOpenAutoClose <CR>`            | toggle TagBar                        |
-| `set showbreak=+++	" Wrap-broken line prefix`   | wrap-broken line prefix              |
+| `set showbreak=+++`                              | wrap-broken line prefix              |
 | `set cindent "indent estilo c`                   | indent style c                       |
 | `set nowrap`                                     | dont break lines                     |
 | `set spelllang=pt_br,en`                         | spell check                          |
 | `set mouse=ci`                                   | funcoes mouse                        |
+| `set clipboard^=unnamed`                         | copy and paste to clipboard          |
 
 
 ### Plugins settings
