@@ -33,6 +33,8 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | GitGuTter         | git interface                             | [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)                 |
 | spell-pt-br       | spell check ptbr                          | [mateusbraga/vim-spell-pt-br](https://github.com/mateusbraga/vim-spell-pt-b)        |
 | tmux-complete.vim | tmux autocomplete                         | [wellle/tmux-complete.vim](https://github.com/wellle/tmux-complete.vim)             |
+| saltstack plugin  | saltstack syntax                          | [saltstack/salt-vim](https://github.com/saltstack/salt-vim)                       |
+
 
 ## My configs
 ### General settings
@@ -67,9 +69,11 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | `set nowrap`                                     | dont break lines                     |
 | `set spelllang=pt_br,en`                         | spell check                          |
 | `set mouse=ci`                                   | funcoes mouse                        |
-| `set clipboard^=unnamed`                         | copy and paste to clipboard          |
-
-
+| `let mapleader=" "`                              | map leader to space                  |
+| `noremap <Leader>y "*y`                           | copy to clipboard                    |
+| `noremap <Leader>p "*p`                           | paste from clipboard                 |
+| `noremap <Leader>Y "+y`                           | copy to clipboard                    |
+| `noremap <Leader>P "+p`                           | paste clipboard                      |
 ### Plugins settings
 | Command                                               | Description                       | Plugin        |
 |-------------------------------------------------------|-----------------------------------|---------------|
