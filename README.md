@@ -33,7 +33,8 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | GitGuTter         | git interface                             | [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)                 |
 | spell-pt-br       | spell check ptbr                          | [mateusbraga/vim-spell-pt-br](https://github.com/mateusbraga/vim-spell-pt-b)        |
 | tmux-complete.vim | tmux autocomplete                         | [wellle/tmux-complete.vim](https://github.com/wellle/tmux-complete.vim)             |
-| saltstack plugin  | saltstack syntax                          | [saltstack/salt-vim](https://github.com/saltstack/salt-vim)                       |
+| saltstack plugin  | saltstack syntax                          | [saltstack/salt-vim](https://github.com/saltstack/salt-vim)                         |
+| vim-nftables      | syntax for nftables                       | [nfnty/vim-nftables](https://github.com/nfnty/vim-nftables)                         |
 
 
 ## My configs
