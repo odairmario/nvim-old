@@ -70,10 +70,16 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | `set spelllang=pt_br,en`                         | spell check                          |
 | `set mouse=ci`                                   | funcoes mouse                        |
 | `let mapleader=" "`                              | map leader to space                  |
-| `noremap <Leader>y "*y`                           | copy to clipboard                    |
-| `noremap <Leader>p "*p`                           | paste from clipboard                 |
-| `noremap <Leader>Y "+y`                           | copy to clipboard                    |
-| `noremap <Leader>P "+p`                           | paste clipboard                      |
+| `noremap <Leader>y "*y`                          | copy to clipboard                    |
+| `noremap <Leader>p "*p`                          | paste from clipboard                 |
+| `noremap <Leader>Y "+y`                          | copy to clipboard                    |
+| `noremap <Leader>P "+p`                          | paste clipboard                      |
+| `set backup`                                     | enable backup                        |
+| `set backupdir=/nvim/backup/ `                   | backupdir                            |
+| `set directory=/nvim/swap/ `                     | swap dir                             |
+| `set undodir=/nvim/undo/ `                       | undo dir                             |
+| `set undofile`                                   | save undofile                        |
+
 ### Plugins settings
 | Command                                               | Description                       | Plugin        |
 |-------------------------------------------------------|-----------------------------------|---------------|
