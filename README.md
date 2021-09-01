@@ -76,10 +76,11 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | `noremap <Leader>Y "+y`                          | copy to clipboard                    |
 | `noremap <Leader>P "+p`                          | paste clipboard                      |
 | `set backup`                                     | enable backup                        |
-| `set backupdir=~/.nvim/backup/ `                  | backupdir                            |
-| `set directory=~/.nvim/swap/ `                    | swap dir                             |
-| `set undodir=~/.nvim/undo/ `                      | undo dir                             |
+| `set backupdir=~/.nvim/backup/ `                 | backupdir                            |
+| `set directory=~/.nvim/swap/ `                   | swap dir                             |
+| `set undodir=~/.nvim/undo/ `                     | undo dir                             |
 | `set undofile`                                   | save undofile                        |
+| `set background=dark`                            | set the background color to dark     |
 #### Details
 The backup configs presume the directories are created, if not then run:
 ```
