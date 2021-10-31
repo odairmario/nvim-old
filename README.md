@@ -35,52 +35,55 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | tmux-complete.vim | tmux autocomplete                         | [wellle/tmux-complete.vim](https://github.com/wellle/tmux-complete.vim)             |
 | saltstack plugin  | saltstack syntax                          | [saltstack/salt-vim](https://github.com/saltstack/salt-vim)                         |
 | vim-nftables      | syntax for nftables                       | [nfnty/vim-nftables](https://github.com/nfnty/vim-nftables)                         |
+| vim-jinja2-syntax | syntax for jinja template                 | [glench/vim-jinja2-syntax](https://github.com/glench/vim-jinja2-syntax)             |
 
 
 ## My configs
 ### General settings
-| Command                                          | Description                          |
-|--------------------------------------------------|--------------------------------------|
-| `syntax on`                                      | Enable syntax highlight              |
-| `set encoding=utf-8`                             | set encoding to utf-8                |
-| `set showmatch`                                  | briefly jump to matching brackets    |
-| `set number`                                     | Show numbers                         |
-| `set showcmd`                                    | show inserted command                |
-| `set expandtab`                                  | tab 4 espaco                         |
-| `set tabstop=4`                                  | tab 4 espaco                         |
-| `set shiftwidth=4`                               | tab 4 espaco                         |
-| `set softtabstop=4`                              | tab 4 espaco                         |
-| `autocmd FileType html setlocal ts=2 sts=2 sw=2` | html file with 2 spaces              |
-| `autocmd FileType sls setlocal ft=yaml`          | sls file with 2 spaces               |
-| `autocmd FileType tex setlocal ts=2 sts=2 sw=2`  | tex file with 2 spaces               |
-| `set ruler`                                      | enable ruler                         |
-| `set hls`                                        | enable highlights on search patterns |
-| `set ai`                                         | enable auto ident                    |
-| `set aw`                                         | enable auto saving on switch buffer  |
-| `set viminfo=%,'50,\"100,/100,:100,n`            | storage buffer options               |
-| `nmap <C-Down> ddp`                              | move line to down                    |
-| `nmap <C-Up> ddkP`                               | move line to up                      |
-| `nmap cc diwi`                                   | cut word and enter to insertmode     |
-| `nmap <F1> :make! <CR>`                          | make shotcut                         |
-| `nmap <F2> :noh <CR>`                            | disable highlight                    |
-| `nmap <F4> :NERDTreeToggle <CR>`                 | toggle NERDTree                      |
-| `nmap <F3> :TagbarOpenAutoClose <CR>`            | toggle TagBar                        |
-| `set showbreak=+++`                              | wrap-broken line prefix              |
-| `set cindent "indent estilo c`                   | indent style c                       |
-| `set nowrap`                                     | dont break lines                     |
-| `set spelllang=pt_br,en`                         | spell check                          |
-| `set mouse=ci`                                   | funcoes mouse                        |
-| `let mapleader=" "`                              | map leader to space                  |
-| `noremap <Leader>y "*y`                          | copy to clipboard                    |
-| `noremap <Leader>p "*p`                          | paste from clipboard                 |
-| `noremap <Leader>Y "+y`                          | copy to clipboard                    |
-| `noremap <Leader>P "+p`                          | paste clipboard                      |
-| `set backup`                                     | enable backup                        |
-| `set backupdir=~/.nvim/backup/ `                 | backupdir                            |
-| `set directory=~/.nvim/swap/ `                   | swap dir                             |
-| `set undodir=~/.nvim/undo/ `                     | undo dir                             |
-| `set undofile`                                   | save undofile                        |
-| `set background=dark`                            | set the background color to dark     |
+| Command                                                     | Description                          |
+|-------------------------------------------------------------|--------------------------------------|
+| `syntax on`                                                 | Enable syntax highlight              |
+| `set encoding=utf-8`                                        | set encoding to utf-8                |
+| `set showmatch`                                             | briefly jump to matching brackets    |
+| `set number`                                                | Show numbers                         |
+| `set showcmd`                                               | show inserted command                |
+| `set expandtab`                                             | tab 4 espaco                         |
+| `set tabstop=4`                                             | tab 4 espaco                         |
+| `set shiftwidth=4`                                          | tab 4 espaco                         |
+| `set softtabstop=4`                                         | tab 4 espaco                         |
+| `autocmd FileType html setlocal ts=2 sts=2 sw=2`            | html file with 2 spaces              |
+| `autocmd FileType sls setlocal ft=yaml`                     | sls file with 2 spaces               |
+| `autocmd FileType tex setlocal ts=2 sts=2 sw=2`             | tex file with 2 spaces               |
+| `autocmd FileType typescriptreact setlocal ts=2 sts=2 sw=2` | typescript react  with 2 spaces      |
+| `autocmd FileType tsx setlocal ts=2 sts=2 sw=2`             | typescript with 2 spaces             |
+| `set ruler`                                                 | enable ruler                         |
+| `set hls`                                                   | enable highlights on search patterns |
+| `set ai`                                                    | enable auto ident                    |
+| `set aw`                                                    | enable auto saving on switch buffer  |
+| `set viminfo=%,'50,\"100,/100,:100,n`                       | storage buffer options               |
+| `nmap <C-Down> ddp`                                         | move line to down                    |
+| `nmap <C-Up> ddkP`                                          | move line to up                      |
+| `nmap cc diwi`                                              | cut word and enter to insertmode     |
+| `nmap <F1> :NERDTree <CR>`                                  | NERDTree shotcut                     |
+| `nmap <F2> :noh <CR>`                                       | disable highlight                    |
+| `nmap <F4> :NERDTreeToggle <CR>`                            | toggle NERDTree                      |
+| `nmap <F3> :TagbarOpenAutoClose <CR>`                       | toggle TagBar                        |
+| `set showbreak=+++`                                         | wrap-broken line prefix              |
+| `set cindent "indent estilo c`                              | indent style c                       |
+| `set nowrap`                                                | dont break lines                     |
+| `set spelllang=pt_br,en`                                    | spell check                          |
+| `set mouse=ci`                                              | funcoes mouse                        |
+| `let mapleader=" "`                                         | map leader to space                  |
+| `noremap <Leader>y "*y`                                     | copy to clipboard                    |
+| `noremap <Leader>p "*p`                                     | paste from clipboard                 |
+| `noremap <Leader>Y "+y`                                     | copy to clipboard                    |
+| `noremap <Leader>P "+p`                                     | paste clipboard                      |
+| `set backup`                                                | enable backup                        |
+| `set backupdir=~/.nvim/backup/ `                            | backupdir                            |
+| `set directory=~/.nvim/swap/ `                              | swap dir                             |
+| `set undodir=~/.nvim/undo/ `                                | undo dir                             |
+| `set undofile`                                              | save undofile                        |
+| `set background=dark`                                       | set the background color to dark     |
 #### Details
 The backup configs presume the directories are created, if not then run:
 ```
