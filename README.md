@@ -12,7 +12,24 @@ In linux can execute this line to install plugin manager:
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
-
+## How run
+### NVIM:
+To generate config do:
+```bash
+python3 nvim.py -o ~/.config/nvim/init.vim
+```
+To install plugins open `~/.config/nvim/init.vim` and do:
+```bash
+:PlugInstall
+```
+### VIM
+To generate config do:
+```bash
+python3 nvim.py -o ~/.vimrc
+```
+To install plugins, open `~/.vimrc` and do `:PlugInstall`
+### Notes:
+After add new plugin on plugin table, need open vim config file and do `:PlugInstall`
 ## My plugins
 | Name              | Description                               | Url                                                                                 |
 |-------------------|-------------------------------------------|-------------------------------------------------------------------------------------|
@@ -25,13 +42,13 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 | deoplete-jedi     | python jedi completion                    | [deoplete-plugins/deoplete-jedi](https://github.com/deoplete-plugins/deoplete-jedi) |
 | vim-table-mode    | vim table mode                            | [dhruvasagar/vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)         |
 | tagbar            | tagbar                                    | [majutsushi/tagbar](https://github.com/majutsushi/tagbar)                           |
-| vim-snippets      | snniptes variados                         | [honza/vim-snippets](https://github.com/honza/vim-snippets                          |
+| vim-snippets      | snniptes variados                         | [honza/vim-snippets](https://github.com/honza/vim-snippets)                         |
 | ultisnips         | snniptes variados                         | [sirver/ultisnips](https://github.com/sirver/ultisnips)                             |
 | NeoSolarized      | solarized coloscheme                      | [overcache/NeoSolarized](https://github.com/overcache/NeoSolarized)                 |
 | Ale               | syntax checker                            | [dense-analysis/ale](https://github.com/dense-analysis/ale)                         |
 | auto-pairs        | close pairs                               | [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs)                     |
 | GitGuTter         | git interface                             | [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)                 |
-| spell-pt-br       | spell check ptbr                          | [mateusbraga/vim-spell-pt-br](https://github.com/mateusbraga/vim-spell-pt-b)        |
+| spell-pt-br       | spell check ptbr                          | [mateusbraga/vim-spell-pt-br](https://github.com/mateusbraga/vim-spell-pt-br)       |
 | tmux-complete.vim | tmux autocomplete                         | [wellle/tmux-complete.vim](https://github.com/wellle/tmux-complete.vim)             |
 | saltstack plugin  | saltstack syntax                          | [saltstack/salt-vim](https://github.com/saltstack/salt-vim)                         |
 | vim-nftables      | syntax for nftables                       | [nfnty/vim-nftables](https://github.com/nfnty/vim-nftables)                         |
