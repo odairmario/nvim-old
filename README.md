@@ -101,6 +101,7 @@ After add new plugin on plugin table, need open vim config file and do `:PlugIns
 | `set undodir=~/.nvim/undo/ `                                | undo dir                             |
 | `set undofile`                                              | save undofile                        |
 | `set background=dark`                                       | set the background color to dark     |
+| `set termguicolors`                                     | Requirement for NeoSolarized         |
 #### Details
 The backup configs presume the directories are created, if not then run:
 ```
