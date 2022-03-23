@@ -70,7 +70,9 @@ After add new plugin on plugin table, need open vim config file and do `:PlugIns
 | `set softtabstop=4`                                         | tab 4 espaco                         |
 | `autocmd FileType html setlocal ts=2 sts=2 sw=2`            | html file with 2 spaces              |
 | `autocmd FileType sls setlocal ft=yaml`                     | sls file with 2 spaces               |
-| `autocmd FileType tex setlocal ts=2 sts=2 sw=2`             | tex file with 2 spaces               |
+| `autocmd FileType plaintex set ft=tex tw=100 spell`         | tex file with 2 spaces               |
+| `autocmd FileType tex set  tw=100 spell`                    | tex file with 2 spaces               |
+| `autocmd FileType tex setlocal ts=2 sts=2 sw=2 `            | tex file with 2 spaces               |
 | `autocmd FileType typescriptreact setlocal ts=2 sts=2 sw=2` | typescript react  with 2 spaces      |
 | `autocmd FileType tsx setlocal ts=2 sts=2 sw=2`             | typescript with 2 spaces             |
 | `set ruler`                                                 | enable ruler                         |
@@ -101,7 +103,6 @@ After add new plugin on plugin table, need open vim config file and do `:PlugIns
 | `set undodir=~/.nvim/undo/ `                                | undo dir                             |
 | `set undofile`                                              | save undofile                        |
 | `set background=dark`                                       | set the background color to dark     |
-| `set termguicolors`                                     | Requirement for NeoSolarized         |
 #### Details
 The backup configs presume the directories are created, if not then run:
 ```
