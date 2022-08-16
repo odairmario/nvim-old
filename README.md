@@ -115,7 +115,6 @@ mkdir ~/.nvim/{backup,undo,swap}
 | `let g:deoplete#enable_at_startup = 1`                | Enable deoplete on startup        | Deoplete      |
 | `autocmd FileType md  :silent :TableModeEnable`       | enable TableMode to markdown file | vim-markdown  |
 | `autocmd FileType markdown  :silent :TableModeEnable` | enable TableMode to markdown file | vim-markdown  |
-| `let g:tagbar_left=1`                                 | Tagbar left side                  | TagBar        |
 | `let g:UltiSnipsExpandTrigger="<c-j>"`                | enable snippets                   | utils-snips   |
 | `let g:UltiSnipsJumpForwardTrigger="<c-b>"`           |                                   | utils-snips   |
 | `let g:UltiSnipsJumpBackwardTrigger="<c-z>"`          |                                   | utils-snips   |
