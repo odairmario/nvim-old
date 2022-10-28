@@ -64,10 +64,11 @@ After add new plugin on plugin table, need open vim config file and do `:PlugIns
 | `set showmatch`                                             | briefly jump to matching brackets    |
 | `set number`                                                | Show numbers                         |
 | `set showcmd`                                               | show inserted command                |
-| `set expandtab`                                             | tab 4 espaco                         |
-| `set tabstop=4`                                             | tab 4 espaco                         |
-| `set shiftwidth=4`                                          | tab 4 espaco                         |
-| `set softtabstop=4`                                         | tab 4 espaco                         |
+| `set expandtab`                                             | tab 2 espaco                         |
+| `set tabstop=2`                                             | tab 2 espaco                         |
+| `set shiftwidth=2`                                          | tab 2 espaco                         |
+| `set softtabstop=2`                                         | tab 2 espaco                         |
+| `set textwidth=100`                                         | max text width 100                   |
 | `autocmd FileType html setlocal ts=2 sts=2 sw=2`            | html file with 2 spaces              |
 | `autocmd FileType sls setlocal ft=yaml`                     | sls file with 2 spaces               |
 | `autocmd FileType plaintex set ft=tex tw=100 spell`         | tex file with 2 spaces               |
