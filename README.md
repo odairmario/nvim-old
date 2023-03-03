@@ -92,7 +92,7 @@ After add new plugin on plugin table, need open vim config file and do `:PlugIns
 | `set cindent "indent estilo c`                              | indent style c                       |
 | `set nowrap`                                                | dont break lines                     |
 | `set spelllang=pt_br,en`                                    | spell check                          |
-| `set mouse=ci`                                              | funcoes mouse                        |
+| `set mouse=`                                              | funcoes mouse                        |
 | `let mapleader=" "`                                         | map leader to space                  |
 | `noremap <Leader>y "*y`                                     | copy to clipboard                    |
 | `noremap <Leader>p "*p`                                     | paste from clipboard                 |
@@ -116,9 +116,7 @@ mkdir ~/.nvim/{backup,undo,swap}
 | `let g:deoplete#enable_at_startup = 1`                | Enable deoplete on startup        | Deoplete      |
 | `autocmd FileType md  :silent :TableModeEnable`       | enable TableMode to markdown file | vim-markdown  |
 | `autocmd FileType markdown  :silent :TableModeEnable` | enable TableMode to markdown file | vim-markdown  |
-| `let g:UltiSnipsExpandTrigger="<c-j>"`                | enable snippets                   | utils-snips   |
-| `let g:UltiSnipsJumpForwardTrigger="<c-b>"`           |                                   | utils-snips   |
-| `let g:UltiSnipsJumpBackwardTrigger="<c-z>"`          |                                   | utils-snips   |
+| `autocmd FileType rst  :silent :TableModeEnable`      | enable TableMode to RST file | vim-markdown  |
 | `let g:ale_completion_enabled = 1`                    | enable ale completion             | ale           |
 | `let g:ale_completion_autoimport = 1`                 | ale completion autoimport         | ale           |
 | `let g:ale_fix_on_save = 1`                           | fix on save                       | ale           |
